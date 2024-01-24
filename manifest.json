@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Padel products length",
+    "description": "Resalta en color rojo los pedidos que tienen productos con más de una unidad.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://admin.shopify.com/store/*/orders/*"],
+            "js": ["./index.js"],
+            "css": ["./index.css"]
+        }
+    ]
+}
