@@ -1,4 +1,11 @@
-.red {
-    color: red;
-    font-weight: bold;
+.red::before {
+    content: "";
+    background: red;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 10px red;
+    transform: translateY(3px);
 }
